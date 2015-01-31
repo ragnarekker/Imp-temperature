@@ -65,8 +65,8 @@ function getTemp() {
     server.log("t_therm "+ t_therm);
   
     // Comunication with Agent
-    agent.send("imp1_temp", t_therm);
-    agent.send("imp1_volt", v_high);
+    agent.send("imp3_temp", t_therm);
+    agent.send("imp3_volt", v_high);
   
     // Sleep for 5 minutes  
     imp.onidle(function() { server.sleepfor(300); });   
